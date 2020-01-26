@@ -1,0 +1,146 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color:white;
+    
+    margin: 0;
+    background: linear-gradient(45deg,black,grey);
+    background-size: 500% 500%;
+    animation: gradient 5s ease infinite
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+ 
+    width: 100%;
+    height: 100vh;
+}
+
+.intro_title {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.intro_inner_LTP {
+
+    text-align: center;
+    line-height: 1.1;
+}
+
+.intro_text {
+    padding-top: 5px;
+    margin: 5px;
+}
+
+.intro_title_LTP {
+    color: white;
+    font-weight: 800;
+    font-size: 150px;
+    
+    background: linear-gradient(45deg,#990000,#ff3333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    background-size: 150% 150%;
+    animation: gradient 3s ease infinite
+}
+
+.intro_inner {
+    width: 100%;
+    max-width: 1400px
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-top: 10px;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    transition: color 1s linear;
+}
+
+.logo:hover {
+    color: #ff3333;
+}
+
+.nav {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+.link:hover {
+    color: #ff3333;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #262525;
+    box-shadow: 0 0 2px rgba(0,0,0,.2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ff3333, #990000);
+    border-radius: 10px;
+    border: 2px solid #990000;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
